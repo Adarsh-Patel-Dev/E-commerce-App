@@ -12,10 +12,10 @@
 
 
 .nav--body {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5rem;
     align-items: center;
 }
 
@@ -47,23 +47,14 @@
 }
 
 .nav--search--input {
-    border-radius: 1rem;
+    
     border: none;
-    padding: 0.5rem;
     width: 40rem;
-}
-
-.nav--search--input {
-    /* position: absolute; */
-    /* width: ; */
     height: 3rem;
     padding: 2rem;
-    border: 1px solid gray;
     background: rgba(255, 255, 255, 0.11);
     border-radius: 0.5rem;
 }
-
-
 
 .nav--search--btn {
     border: 1px solid var(--WHITE);
@@ -98,9 +89,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav--link:hover {
-    color: var(--GRAY-50);
-    transition: 0.5s;
+.btn-solid:hover {
+    background-color: var(--BLACK-100);
+    color: var(--WHITE);;
+    border: 1px solid var(--WHITE);
+    padding: 1rem 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
@@ -112,7 +106,8 @@
 .nav--list {
     display: flex;
     justify-content: flex-end;
-    width: 45rem;
+    width: auto;
+    flex-wrap: wrap;
     list-style: none;
 
 }
@@ -125,7 +120,6 @@
     position: relative;
     top: -15px;
     right: -90%;
-    aspect-ratio: 1/1;
     font-size: 5px;
     font-weight: 600;
     border-radius: 30px;
@@ -163,18 +157,19 @@
     flex-direction: column;
     position: absolute;
     width: 35rem;
-    height: 500px;
-    left: 60%;
-    top: 25%;
+    height: 45rem;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
     gap: 1rem;
     background: var(--WHITE);
-    opacity: 0.75;
-    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.25);
-    border-radius: 30px;
+    opacity: 0.77;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.25);
+    border-radius: 2.5rem;
 }
 
 .signup-title {
-    padding: 2rem;
+    padding: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +216,16 @@
 
     background: VAR(--LIGHT-GREEN);;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btn-login:hover {
+    background: var(--GREEN);
+    color: var(--WHITE);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.5s;
 }
 
 .signup-span {
