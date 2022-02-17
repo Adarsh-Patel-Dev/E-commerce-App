@@ -12,10 +12,11 @@
 
 
 .nav--body {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5rem;
+    align-items: center;
     align-items: center;
 }
 
@@ -83,6 +84,7 @@
     border-radius: 0.5rem;
 }
 
+
 .btn-solid {
     color: var(--WHITE);
     background-color: var(--LIGHT-GREEN);;
@@ -91,10 +93,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav--link:hover {
-    color: var(--GRAY-50);
-    transition: 0.5s;
+.btn-solid:hover {
+    background-color: var(--BLACK-100);
+    color: var(--WHITE);;
+    border: 1px solid var(--WHITE);
+    padding: 1rem 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 .nav-links {
     display: flex;
@@ -105,7 +111,8 @@
 .nav--list {
     display: flex;
     justify-content: flex-end;
-    width: 45rem;
+    flex-wrap: wrap;
+    width: auto;
     list-style: none;
 
 }
@@ -213,7 +220,17 @@
 
     background: VAR(--LIGHT-GREEN);;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px
+    border-radius: 8px;
+    transition: 0.5s;
+
+}
+
+.btn-login:hover {
+    background: var(--GREEN);
+    color: var(--WHITE);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.5s;
 }
 
 .signup-span {
